@@ -62,7 +62,7 @@ for x in range(60):
      # begins, must come after daemon definition
      t.start()
 
-for worker in range(1,100):
+for worker in range(1,65535):
     q.put(worker)
 
 # wait until the thread terminates.
